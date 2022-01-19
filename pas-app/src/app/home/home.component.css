@@ -1,0 +1,260 @@
+span {
+    font-weight: bold;
+    background: lightgray;
+    padding: 0.3em 0.8em;
+    cursor: pointer;
+}
+.play-container {
+    padding: 3em;
+    border: 1px solid lightgray;
+    margin-bottom: 1em;
+}
+#dropdownBasic1 {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    margin-bottom: 2em;
+    color: red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #004882;
+}
+
+h1 {
+  font-family: 'Nunito', 'sans-serif';
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 33.5%;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+youtube-player {
+  
+  position: absolute;
+  top: 35%;
+  left: 32.5%;
+  transform: translate(-50%, -50%);
+} 
+
+.google-logo{
+  position: absolute;
+  top: 25%;
+  right: 6%;
+  transform: rotate(90deg);
+  height: 0.1%;
+  width: 0.1%;
+}
+
+.google-transcript{
+
+  position: absolute;
+  top: 15%;
+  right: 20%;
+  border: solid;
+  border-color: #0563af;
+  border-width: 500%;
+  border-radius: 25px;
+  padding: 20px;
+  width: 30%;
+  height: 40%;
+  overflow-x: auto;
+  overflow-y: auto; 
+}
+
+.ibm-logo{
+  position: absolute;
+  top: 90%;
+  right: 20%;
+  transform: rotate(-90deg);
+  height: 2%;
+  width: 1%;
+}
+
+.ibm-transcript{
+
+  position: absolute;
+  top: 58%;
+  right: 20%;
+  border: solid;
+  border-color: #0563af;
+  border-width: 500%;
+  border-radius: 25px;
+  padding: 20px;
+  width: 30%;
+  height: 40%;
+  overflow-x: auto;
+  overflow-y: auto; 
+}
+
+.amazon-logo{
+  position: absolute;
+  top: 90%;
+  left: 5%;
+  transform: rotate(-90deg);
+  height: 2px;
+  width: 2px;
+}
+
+.amazon-transcript{
+
+  position: absolute;
+  top: 58%;
+  left: 18%;
+  border: solid;
+  border-color: #0563af;
+  border-width: 500%;
+  border-radius: 25px;
+  padding: 20px;
+  width: 30%;
+  height: 40%;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.box select {
+  background-color: #0563af;
+  color: white;
+  padding: 12px;
+  width: 450px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.box::before {
+  content: "\f13a";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #000;
+}
+.middle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.bar {
+  width: 20px;
+  height: 70px;
+  background: #fff;
+  display: inline-block;
+  transform-origin: bottom center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  /*   box-shadow:5px 10px 20px inset rgba(255,23,25.2); */
+  animation: loader 1.2s linear infinite;
+}
+.bar1 {
+  animation-delay: 0.1s;
+}
+.bar2 {
+  animation-delay: 0.2s;
+}
+.bar3 {
+  animation-delay: 0.3s;
+}
+.bar4 {
+  animation-delay: 0.4s;
+}
+.bar5 {
+  animation-delay: 0.5s;
+}
+.bar6 {
+  animation-delay: 0.6s;
+}
+.bar7 {
+  animation-delay: 0.7s;
+}
+.bar8 {
+  animation-delay: 0.8s;
+}
+
+@keyframes loader {
+  0% {
+    transform: scaleY(0.1);
+
+  }
+  50% {
+    transform: scaleY(1);
+    background: #0563af;
+  }
+  100% {
+    transform: scaleY(0.1);
+    background: transparent;
+  }
+}
+
+.title {
+
+  position: absolute;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #0563af;
+  font-size: 30px;
+  top: 100%;
+  left : 2%;
+}
+
+.ibm-metric {
+
+  position: absolute;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #790c24;
+  font-size: 30px;
+  top: 100%;
+  right : 30%;
+  text-align: center;
+}
+
+.aws-metric {
+
+  position: absolute;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #790c24;
+  font-size: 30px;
+  top: 100%;
+  left : 30%;
+  text-align: center;
+}

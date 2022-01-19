@@ -1,0 +1,107 @@
+<div>
+    <div class="debut" *ngIf="selectedVideo == 0">
+        
+        <h1>SPEECH TO TEXT APPLICATION</h1>
+        <div  class="box">
+                
+            <select (change)="selectChangeHandler($event)">
+                <option *ngFor="let vid of videos" value="{{vid.id}}">{{vid.name}}</option>
+            </select>
+        
+        </div>
+    </div>
+    
+    <div *ngIf="endTask == false && selectedVideo > 0" class="chargement">
+                
+        <div class="middle">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            <div class="bar bar4"></div>
+            <div class="bar bar5"></div>
+            <div class="bar bar6"></div>
+            <div class="bar bar7"></div>
+            <div class="bar bar8"></div>
+          </div>
+
+          
+          
+          
+          
+          {{get_amazon()}}
+          {{get_google()}}
+          {{get_ibm()}}
+          {{checkTaskEnd()}}
+          
+    </div>
+
+    <div *ngIf="endTask == true && selectedVideo > 0">
+        
+        {{updatewer()}}
+        
+        <youtube-player 
+        videoId="{{urlVideo}}"
+        suggestedQuality="highres" 
+        [height]="370" 
+        [width]="550" 
+        [startSeconds]="0"
+        [endSeconds]="60">
+        </youtube-player>
+        
+
+        <div class="amazon-box" >
+            
+            <div class="amazon-logo">
+                <img src="../../assets/images/Amazon_icon.png" alt="No AWS">
+            </div>
+
+            <div class="amazon-transcript"> 
+            {{amazonScript}}
+            </div>
+
+        </div>
+
+        <div class="google-box" >
+            
+            <div class="google-logo">
+                <img src="../../assets/images/pngegg.png" alt="No google">
+            </div>
+
+            <div class="google-transcript"> 
+            {{googleScript}}
+            </div>
+
+        </div>
+
+        <div class="ibm-box" >
+            
+            <div class="ibm-logo">
+                <img src="../../assets/images/Symbole-IBM.png" alt="Non IBM">
+            </div>
+
+            <div class="ibm-transcript"> 
+            {{ibmScript}}
+            </div>
+
+        </div>
+
+        <div class="matrics">
+            <div class="title">
+                <!-- Levenshtein distance <br>   -->
+                Word Error Rate
+            </div>
+
+            <div class="ibm-metric">
+                <!-- {{leviIbm}} <br> -->
+                {{werIbm}}
+            </div>
+
+            <div class="aws-metric">
+                <!-- {{leviAws}} <br> -->
+                {{werAws}}
+            </div>
+        </div>
+        
+    </div>
+</div>
+

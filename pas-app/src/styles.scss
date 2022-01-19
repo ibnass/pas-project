@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 18px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    background: #0563af;
+    padding: 1em 0;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+header .logo {
+    font-weight: bold;
+}
+header nav {
+    float: right;
+}
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+}
+header nav ul li a {
+    padding: 1em;
+}
+header nav ul li a:hover {
+    background: #5900cc;
+}
+h1 {
+    // margin-top: 2em;
+    left: 50%;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
