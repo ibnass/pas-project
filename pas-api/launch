@@ -1,0 +1,8 @@
+source venv/Scripts/activate
+
+python - m pip install pipwin
+python - m pipwin install pyaudio
+
+python - m pip install -r requirements.txt
+
+python runserver.py

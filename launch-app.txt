@@ -1,0 +1,2 @@
+cd pas-app
+ng serve -o
