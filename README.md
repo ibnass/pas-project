@@ -24,3 +24,7 @@ ng serve -o
 ```
 or
 `source launch-app.txt`
+
+# Warning
+
+To use the application, you have to setup AWS Credentials on your local environement. Explanations are available here : https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html
